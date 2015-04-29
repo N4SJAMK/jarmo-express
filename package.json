@@ -1,0 +1,12 @@
+{
+  "name":        "jarmo-express",
+  "version":     "0.1.0",
+  "description": "ExpressJS middleware for Jarmo.",
+
+  "keywords": [
+    "jarmo", "express", "middleware"
+  ],
+
+  "author":  "taneli.hartikainen@jamk.fi",
+  "license": "MIT"
+}
