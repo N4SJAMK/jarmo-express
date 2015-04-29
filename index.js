@@ -63,6 +63,12 @@ module.exports = function jarmo(config) {
 			// and send it to the Jarmo server, catching any errors.
 			var payload = config.resolve(req, res, Date.now() - start);
 
+			if(!payload) {
+				// If the payload is falsy we don't send the data. This allows
+				// for some ad hoc filtering with custom resolve functions.
+				return removeListeners();
+			}
+
 			return send(config.host, config.port, payload, function(err) {
 				if(err) {
 					config.error(err);
