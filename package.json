@@ -7,6 +7,8 @@
     "jarmo", "express", "middleware"
   ],
 
+  "repository": "N4SJAMK/jarmo-express",
+
   "author":  "taneli.hartikainen@jamk.fi",
   "license": "MIT"
 }
