@@ -1,14 +1,13 @@
 {
-  "name":        "jarmo-express",
-  "version":     "0.1.1",
+  "name": "jarmo-express",
+  "version": "0.1.2",
   "description": "ExpressJS middleware for Jarmo.",
-
   "keywords": [
-    "jarmo", "express", "middleware"
+    "jarmo",
+    "express",
+    "middleware"
   ],
-
   "repository": "N4SJAMK/jarmo-express",
-
-  "author":  "taneli.hartikainen@jamk.fi",
+  "author": "taneli.hartikainen@jamk.fi",
   "license": "MIT"
 }
