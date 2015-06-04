@@ -27,13 +27,13 @@ var client = dgram.createSocket('udp4');
  * @return {function} The middleware function.
  */
 module.exports = function jarmo(config) {
-	if(!process.env.JARMO_ENABLE) {
+	if(process.env.JARMO_ENABLE !== 'true') {
 		// By default the middleware is just pass-through, so you don't need to
 		// do any special configuration for your development environment. In
 		// order to enable it you must set the 'JARMO_ENABLE' env variable.
 		console.log([
 			'By default \'jarmo-express\' is disabled, you can enable it by',
-			'setting the JARMO_ENABLE environmental variable.'
+			'setting the JARMO_ENABLE environmental variable to \'true\'.'
 		].join(' '));
 		return function(req, res, next) { return next(); }
 	}
